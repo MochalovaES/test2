@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'corsheaders',
 
+    'catalog',
+    'baskets',
     'users',
 ]
 
@@ -177,4 +179,5 @@ SWAGGER_SETTINGS = {
     }
 }
 
-
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
